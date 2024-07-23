@@ -22,3 +22,16 @@ with open("romeo.txt", "r") as file:
             print(word)
             print(count)
             print(lines)
+            
+# You can split a string into a list of words using split() method.
+# The split() method splits a string into a list using a delimiter.
+# The default delimiter is whitespace.
+
+# The split() method returns a list of the words in the string, using the " " as the delimiter string.
+with open("romeo.txt", "r") as file:
+    # The split() method splits a string into a list using a delimiter
+    # this will fail without the read() method.
+    words = file.read().split()
+    print("Words:", words)
+    print(words[0])
+    print(len(words))
